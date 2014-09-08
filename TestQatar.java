@@ -5,7 +5,7 @@ import org.openqa.selenium.*;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -20,7 +20,7 @@ public class TestQatar {
                 options.addArguments("test-type");
                 capability.setCapability(ChromeOptions.CAPABILITY, options);
 
-                //capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 
 
                 WebDriver driver = new ChromeDriver(options);
